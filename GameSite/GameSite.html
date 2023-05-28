@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en,ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="top center">
+        <div class="top_content">
+            <h1 class="top_welcome">Добро пожаловать на мой сайт !</h1>
+            <p class="top_intro">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="bold">поехали</span> и
+               <span class="bold">приступай</span></p>
+            <a class="top_button button">Поехали!</a>
+        </div>
+        </section>
+    </header>
+    <div class="gameBox center">
+        <a href="#" class="gameBox__games gameBox__games_game1" onclick="monthOfSeasons()">Игра 1</a>
+        <a href="#" class="gameBox__games gameBox__games_game2" onclick="guessFirstOrLast()">Игра 2</a>
+        <a href="#" class="gameBox__games gameBox__games_game3" onclick="puzzleGame()">Игра 3</a>
+    </div>
+    <div class="seasons center">
+        <div class="seasons_content">
+            <h2 class="seasons_content_name">Времена года!</h2>
+            <p class="seasons_content_intro">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <a class="seasons_content_button button" onclick="monthOfSeasons()">Играть!</a>
+        </div>
+        <div class="seasons_logo">
+                <picture onclick="monthOfSeasons()">
+                    <source media="(max-width: 425px)" srcset="img/seasons_game_mob.svg">
+                    <img src="img/seasons_game.svg" alt="seasons_game">
+                </picture>
+            </div>
+    </div>
+    <div class="guess center">
+        <div class="guess_logo">
+            <picture onclick="guessFirstOrLast()">
+                <source media="(max-width: 425px)" srcset="img/guess_game_mob.svg">
+                <img src="img/guess_game.svg" alt="guess_game">
+            </picture>
+        </div>
+        <div class="guess_content">
+            <h2 class="guess_content_name">Запомни слова</h2>
+            <p class="guess_content_intro">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <a class="guess_content_button button" onclick="guessFirstOrLast()">Играть!</a>
+        </div>
+    </div>
+    <div class="puzzle center">
+        <div class="puzzle_content">
+            <h2 class="puzzle_content_name">Игра в загадки</h2>
+            <p class="puzzle_content_intro">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+            <a class="puzzle_content_button button" onclick="puzzleGame()">Играть!</a>
+        </div>
+    </div>
+    <footer>
+        <p>Все права защищены</p>
+    </footer>
+    <script src="seasons_game.js"></script>
+    <script src="guess_game.js"></script>
+    <script src="puzzle_game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #000915;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.top {
+    background-image: url(./img/topBack.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1024px;
+
+    &_welcome {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: #FFFFFF;
+        width: 788px;
+    }
+
+    &_intro {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        width: 481px;
+        padding-bottom: 12px;
+    }
+
+
+    &_content {
+        padding-top: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+}
+
+.button {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #9C0332;
+    border-radius: 30px;
+    display: block;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        background: #EB443F;
+        box-shadow: 0 0 5px #EB443F;
+        ;
+    }
+}
+
+.gameBox {
+    background-image: url(img/gameBoxBack.jpg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+    &__games {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        display: flex;
+        color: #FFFFFF;
+        padding: 32px;
+        min-height: 300px;
+        width: 378px;
+        box-sizing: border-box;
+        border-radius: 19px;
+        align-items: flex-end;
+        transition: 0.1s;
+
+        &:hover {
+            outline: 3px solid #44D2FF;
+        }
+
+        &_game1 {
+            background-image: url(img/game1.jpg);
+            cursor: pointer;
+        }
+
+        &_game2 {
+            background-image: url(img/game2.jpg);
+            cursor: pointer;
+        }
+
+        &_game3 {
+            background-image: url(img/game3.jpg);
+            cursor: pointer;
+        }
+    }
+}
+
+.seasons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 233.5px;
+    padding-bottom: 233.5px;
+
+    &_content {
+        width: 584px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: 32px;
+
+        &_name {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            color: #FFFFFF;
+        }
+
+        &_intro {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+    }
+
+    &_logo {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.guess {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    padding-top: 233.5px;
+    padding-bottom: 233.5px;
+
+    &_content {
+        width: 584px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: 32px;
+
+        &_name {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            color: #FFFFFF;
+        }
+
+        &_intro {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+    }
+
+    &_logo {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.puzzle {
+    background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 10%), url(./img/backGame3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+
+    &_content {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &_name {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            color: #FFFFFF;
+        }
+
+        &_intro {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+footer {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    padding-top: 32.5px;
+    padding-bottom: 32.5px;
+    border-top: 1px solid rgba(184, 212, 255, 0.2);
+}
+
+@import 'mobile';
+@import 'tablet';

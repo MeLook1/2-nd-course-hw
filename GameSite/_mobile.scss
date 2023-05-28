@@ -1,0 +1,90 @@
+@media (max-width: 425px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top{
+        min-height: 735px;
+        background-position: 30%;
+        &_content{
+            align-items: center;
+            text-align: center;
+            padding-top: 238px;
+        }
+        &_welcome{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            width: 100%;
+        }
+        &_intro{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            width: 100%;
+        }
+    }
+    .gameBox{
+        &_games{
+            width: 343px;
+        }
+    }
+    .seasons{
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 64px;
+        justify-content: center;
+        &_content{
+            text-align: center;
+            align-items: center;
+            &_name{
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+            }
+            &_intro{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    .guess{
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 64px;
+        justify-content: center;
+        &_content{
+            text-align: center;
+            align-items: center;
+            &_name{
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+            }
+            &_intro{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    .puzzle{
+        background-size: 300%;
+        &_content{
+            &_name{
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+            }
+            &_intro{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+footer{
+    border-top: 0;
+}
+}

@@ -1,0 +1,84 @@
+@media (min-width: 426px) and (max-width: 768px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top{
+        min-height: 735px;
+        background-position: 30%;
+        &_content{
+            align-items: center;
+            text-align: center;
+            padding-top: 238px;
+        }
+        &_welcome{
+            width: 100%;
+        }
+        &_intro{
+            width: 100%;
+        }
+    }
+    .gameBox{
+        &_games{
+            width: 343px;
+        }
+    }
+    .seasons{
+        justify-content: center;
+        gap: 64px;
+        &_content{
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .guess{
+        justify-content: center;
+        gap: 64px;
+        &_content{
+            align-items: center;
+            text-align: center;
+        } 
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .center{
+        padding-left: calc(50% - 400px);
+        padding-right: calc(50% - 400px);
+    }
+    .top{
+        min-height: 735px;
+        background-position: 30%;
+        &_content{
+            align-items: center;
+            text-align: center;
+            padding-top: 238px;
+        }
+        &_welcome{
+            width: 100%;
+        }
+        &_intro{
+            width: 100%;
+        }
+    }
+    .gameBox{
+        &_games{
+            width: 343px;
+        }
+    }
+    .seasons{
+        justify-content: center;
+        gap: 64px;
+        &_content{
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .guess{
+        justify-content: center;
+        gap: 64px;
+        &_content{
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
